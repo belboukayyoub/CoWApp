@@ -1,66 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# CoWApp - Collaborative Workspace App
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<div align="center">
 
-## About Laravel
+[![Build](https://img.shields.io/badge/Build-not_yet-red)](https://github.com/belboukayyoub/CoWApp/releases)
+[![Version](https://img.shields.io/badge/version-v0.0.0-blue)](https://github.com/belboukayyoub/CoWApp/releases)
+[![MIT](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## About CoWApp
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+CoWApp it's a collaborative platform designed to facilitate teamwork by providing a range of tools for communication, task management, and project organization. It allows users to create teams, invite members, and collaborate effectively in a workspace that includes whiteboarding, chatting, conferencing, posting, scheduling, and more. The application also includes a reporting system for addressing issues and a leader concept to facilitate decision-making and ensure team productivity.
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* **Create a team**: Users can create a team and invite team members to join.
+* **Whiteboarding**: Users can use the app's whiteboarding feature to collaborate on ideas and projects.
+* **Communication**: The app includes chat and conferencing tools to facilitate communication between team members.
+* **Calendar**: The app includes a calendar with Kanban functionality to help teams manage their projects and deadlines.
+* **Meetings planning**: The app includes a meetings planning feature.
+* **Reclamation services**: Users can report people, bugs, and feedback to the app's administrators.
+* **Leader concept**: The app includes a leadership concept with different leadership options, including manual vote, system vote, or fixed leadership.
+* **Rules**:
+  * **Team rules**: Users can agree on team rules, and any violations can be reported to the leader or app administrator.
+  * **Global rules**: Users must adhere to global rules, and violations may result in a ban.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Getting Started
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+To get started with the app, follow these steps:
 
-## Laravel Sponsors
+* Clone this repository to your local machine.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+* ```bash
+  composer install
+  ```
 
-### Premium Partners
+* ```bash
+  cp .env.example .env
+  ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+* ```bash
+  php artisan key:generate
+  ```
+
+* ```bash
+  php artisan serve 
+  ```
+
+* Open the api in your web browser by navigating to  <http://127.0.0.1:8000>
+
+Note that this repo contain only API for this app checkout [the front-end](https://github.com/belboukayyoub/CoWApp-frontend) for this app.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+We welcome contributions from anyone who wants to improve this app! To contribute, please follow these steps:
 
-## Code of Conduct
+1. Fork this repository to your GitHub account.
+2. Create a new branch for your changes.
+3. Make your changes and commit them to your branch.
+4. Push your changes to your fork.
+5. Submit a pull request from your fork's branch to the main branch of this repository.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Please checkout [our Contributing guidelines](/docs/CONTRIBUTING.md)
 
-## Security Vulnerabilities
+## Issues and Bug Reports
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+If you find any issues or bugs with the app, please report them to us by opening a new issue in this repository.
+
+## Contact Us
+
+If you have any questions or feedback about the app, please contact us at [belboukayyoub@gmail.com](mailto:belboukayyoub@gmail.com). We'd love to hear from you!
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This app is licensed under the [MIT license](https://opensource.org/licenses/MIT).
